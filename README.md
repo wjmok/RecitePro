@@ -23,6 +23,20 @@
 
 **2\. 系统架构说明**
 
+
+```flow
+st=>start: Start:>https://www.zybuluo.com
+io=>inputoutput: verification
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+sub=>subroutine: Your Subroutine
+e=>end
+
+st->io->op->cond
+cond(yes)->e
+cond(no)->sub->io
+```
+
 ```seq
 小程序/cms->api（后端服务器）: http预请求
 Note left of 小程序/cms: 前后端分离api架构
