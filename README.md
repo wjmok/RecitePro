@@ -24,7 +24,7 @@
 **2\. 系统架构说明**
 
 
-seq
+```seq
 小程序/cms->api（后端服务器）: http预请求
 Note left of 小程序/cms: 前后端分离api架构
 Note left of 小程序/cms: 小程序参照微信小程序官方开发标准
@@ -38,7 +38,7 @@ api（后端服务器）-->小程序/cms: http请求返回json
 api（后端服务器）->mysql: sql请求
 mysql->api（后端服务器）: sql返回数据
 Note right of mysql: mysql8.0，所有数据表没有任何表关联设置
-
+```
 
 ---
 **3\. 权限控制**
